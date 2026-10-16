@@ -60,7 +60,7 @@ TheArchive is a Windows desktop application for managing a local film collection
 
 Run the downloaded installer, then open TheArchive from the Start menu or desktop shortcut. The WebView2 Runtime is required; your films and photos remain in your own folders.
 
-This is the **v1.0 public preview**. The release page lists the installer, corresponding source revision, SHA-256 and validation scope. Installation, in-place upgrades and preservation of real user data still require further verification. GitHub's Source code archives contain source files, not an installer.
+The **v1.0 Windows x64 installer** is available. The release page lists the installer, corresponding source revision, SHA-256 and validation scope. Installation, in-place upgrades and preservation of real user data still require further verification. GitHub's Source code archives contain source files, not an installer.
 
 ### From folders to a library
 

@@ -4,7 +4,7 @@
 
 TheArchive 面向 Windows x64，产品 v1.0，构建 1.0.0，当前 SQLite schema 23。本仓库以当前源码快照作为首次公开版本，不包含此前私有开发提交、旧审计材料或本机资料。
 
-公开测试版安装包、对应源码提交、校验值及验证范围统一保存在 [GitHub Releases](https://github.com/Morskai/TheArchive/releases)。产品版本和应用升级身份保持不变；发布包不代表安装／覆盖升级已通过实测。
+公开安装包、对应源码提交、校验值及验证范围统一保存在 [GitHub Releases](https://github.com/Morskai/TheArchive/releases)。产品版本和应用升级身份保持不变；发布包不代表安装／覆盖升级已通过实测。
 
 前端：React / TypeScript / Vite。桌面：Tauri / Rust / SQLite。浏览器提供虚构数据演示；实际扫描、系统凭据、播放器与文件操作依赖桌面层。
 
