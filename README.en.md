@@ -9,10 +9,12 @@
 <p align="center"><a href="README.md">简体中文</a> · <strong>English</strong></p>
 
 <p align="center">
-  <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-292826?style=flat-square" />
-  <img alt="Version v1.0" src="https://img.shields.io/badge/version-v1.0-b99a60?style=flat-square" />
-  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-59634f?style=flat-square" /></a>
-  <img alt="AI-developed with GPT-6.1 Sol" src="https://img.shields.io/badge/AI-GPT--6.1_Sol-77634b?style=flat-square" />
+  <img alt="React 19" src="https://img.shields.io/badge/React-19-292826?style=flat-square&amp;logo=react&amp;logoColor=61DAFB" />
+  <img alt="TypeScript 5.9" src="https://img.shields.io/badge/TypeScript-5.9-292826?style=flat-square&amp;logo=typescript&amp;logoColor=3178C6" />
+  <img alt="Vite 7" src="https://img.shields.io/badge/Vite-7-292826?style=flat-square&amp;logo=vite&amp;logoColor=AC80FF" />
+  <img alt="Tauri 2" src="https://img.shields.io/badge/Tauri-2-292826?style=flat-square&amp;logo=tauri&amp;logoColor=FFC131" />
+  <img alt="Rust" src="https://img.shields.io/badge/Rust-292826?style=flat-square&amp;logo=rust&amp;logoColor=FFFFFF" />
+  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-292826?style=flat-square&amp;logo=sqlite&amp;logoColor=76B8DB" />
 </p>
 
 <p align="center">
