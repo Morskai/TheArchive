@@ -1,0 +1,70 @@
+.issues-page{max-width:1500px;margin:0 auto;padding:30px 0 50px}
+.issues-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:24px;border-bottom:1px solid var(--line-soft)}
+.issues-heading h1{margin:0 0 8px;color:var(--text);font-size:29px;font-weight:500;letter-spacing:.04em}
+#issues-title{scroll-margin-top:52px}
+.issues-heading p{margin:0;color:#aa9f90;font-size:12px}
+.issues-total{display:flex;align-items:baseline;gap:8px;white-space:nowrap;color:#a99b85;font-size:12px}
+.issues-total strong{color:var(--gold-bright);font:29px Georgia,serif}
+.issues-toolbar{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:19px 0;border-bottom:1px solid var(--line-soft)}
+.issues-tabs{display:flex;align-items:center;gap:6px}
+.issues-tabs button{display:flex;align-items:center;gap:8px;min-height:35px;padding:0 12px;border:1px solid transparent;border-radius:6px;background:transparent;color:#a99e8f;font-size:12px}
+.issues-tabs button:hover,.issues-tabs button.active{color:#ebd2a8;background:#af844123;border-color:#b891514f}
+.issues-tabs button span{color:#bfa77e;font:12px Georgia,serif}
+.issues-filters{display:flex;align-items:center;gap:10px}
+.issues-source{display:flex;align-items:center;gap:9px;color:#a69b8b;font-size:12px;white-space:nowrap}
+.issues-source .app-select{height:36px;min-width:118px;padding:0 8px;border:1px solid #ffffff2a;border-radius:6px;background:#171718;color:#e0d4c1;font-size:12px}
+.issues-search{display:flex;align-items:center;gap:7px;width:222px;height:36px;padding:0 10px;border:1px solid #ffffff2a;border-radius:6px;background:#ffffff06;color:#b99b6d}
+.issues-search span{font-size:21px;line-height:1}
+.issues-search input{min-width:0;width:100%;border:0;outline:0;background:transparent;color:var(--text);font-size:12px}
+.issues-search input::placeholder{color:#8d8477}
+.issues-list-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:22px;padding-bottom:12px;color:#d8c6a9;font-size:13px}
+.issues-list-heading button,.issues-empty button{min-height:34px;padding:0 12px;border:1px solid #b895605c;border-radius:6px;background:#ac84421c;color:#d9ba86;font-size:12px}
+.issues-list-heading button:disabled{opacity:.42;cursor:not-allowed}
+.issues-bulk-actions button[aria-pressed="true"]{border-color:var(--gold);background:#ac844238;color:var(--gold-bright)}
+.issues-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:380px;border:1px solid #a2855350;border-radius:9px;background:radial-gradient(ellipse at 50% 36%,#b5853c16,transparent 49%),linear-gradient(150deg,#171613,#0e0f10 73%);text-align:center}
+.issues-empty-symbol{display:grid;place-items:center;width:82px;height:82px;border:1px solid #c3a16b72;border-radius:50%;box-shadow:0 0 0 10px #bb914210,0 0 32px #ae82402c;color:#d8b779;font:33px Georgia,serif}
+.issues-empty h2{margin:25px 0 5px;color:#f0e6d5;font-size:19px;font-weight:500}
+.issues-empty p{max-width:420px;margin:0;padding:0 15px;color:#a79a88;font-size:12px;line-height:1.7}
+.issues-empty button{margin-top:18px}
+@media(max-width:1050px){.issues-toolbar{align-items:flex-start;flex-direction:column}.issues-filters{width:100%}.issues-search{flex:1}}
+@media(max-width:620px){.issues-tabs{width:100%}.issues-tabs button{flex:1;justify-content:center;padding:0 5px}.issues-filters{flex-wrap:wrap}.issues-search{min-width:100%}.issues-empty{min-height:320px}}
+.issues-bulk-actions,.issue-row-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.issues-list{display:flex;flex-direction:column;gap:12px}
+.issue-row{height:206px;display:grid;grid-template-rows:64px 92px;gap:12px;min-width:0;padding:18px 20px;border:1px solid #a2855345;border-radius:9px;background:#171613b3}
+.issue-row-heading{display:flex;align-items:flex-start;gap:12px;min-width:0}
+.issue-select{display:flex;align-items:center;align-self:flex-start;padding-top:3px}
+.issue-select input{accent-color:#c8a46a}
+.issue-object{flex:1;min-width:0}
+.issue-object h2{margin:0 0 7px;color:#f0e6d5;font-size:16px;font-weight:500;line-height:24px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.issue-object p{margin:0;color:#aa9f90;font-size:12px}
+.issues-list-heading small{margin-left:8px;color:#a99e8f;font-size:11px}
+.issue-type-tags{display:flex;align-items:center;flex-wrap:wrap;gap:7px}
+.issue-type-tag{display:inline-flex;align-items:center;gap:8px;min-height:30px;padding:4px 9px;border:1px solid #b8956060;border-radius:5px;background:#ac84421c;color:#e4c592;font-size:12px;line-height:1.5}
+.issue-type-tag>span{color:#ba9f76;font-size:10px}
+button.issue-type-tag:hover:not(:disabled){border-color:#d8b77c;background:#ac844236}
+.issue-type-tag.handled{border-color:#9dae8138;background:#7e986514;color:#b8c3ae}
+.issue-type-tag.handled>span{color:#98ab86}
+.issue-row-actions{flex:none;align-items:flex-start}
+.issue-row-actions button,.issues-confirm button,.issues-feedback button{min-height:34px;padding:0 12px;border:1px solid #b895605c;border-radius:6px;background:#ac84421c;color:#d9ba86;font-size:12px}
+.issue-row button:disabled,.issues-confirm button:disabled,.issues-feedback button:disabled{opacity:.42;cursor:not-allowed}
+.issue-directory-action{display:grid;gap:6px;min-width:0;max-width:360px}
+.issue-directory-controls{display:flex;align-items:center;gap:8px;min-width:0}
+.issue-directory-controls .app-select{min-width:0;max-width:240px;height:34px;padding:0 8px;border:1px solid #ffffff2a;border-radius:6px;background:#171718;color:#e0d4c1;font-size:12px;text-overflow:ellipsis}
+.issue-directory-controls button{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;flex:none}
+.issue-directory-controls button.action-succeeded{border-color:#a7b58c73;color:#d1dec0}
+.issue-directory-error{max-width:210px;margin:0;color:#e3a994;font-size:12px;line-height:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.issue-evidence{display:grid;grid-template-rows:22px 44px 22px;gap:2px;min-width:0;margin:0 0 0 26px;color:#aaa092;font-size:12px;line-height:22px}
+.issue-evidence p{margin:0;min-width:0;overflow:hidden}.issue-evidence span{color:#d0b995}
+.issue-library,.issue-duplicate-directories{white-space:nowrap;text-overflow:ellipsis}
+.issue-reasons{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow-wrap:anywhere}
+.issues-confirm{padding:14px 18px;margin-bottom:14px;border:1px solid #b8956070;border-radius:8px;background:#a47b3520}
+.issues-confirm p{margin:0 0 12px;color:#d8c6a9;font-size:12px;line-height:1.7}.issues-confirm>div{display:flex;gap:8px;justify-content:flex-end}
+.issues-feedback{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px;color:#d9ba86;font-size:12px;line-height:1.7}
+@media(max-width:1050px){.issue-row{height:296px;padding:14px;grid-template-rows:158px 92px}.issue-row-heading{display:grid;grid-template-columns:14px minmax(0,1fr);grid-template-rows:98px 54px;gap:6px 12px}.issue-row-actions{display:grid;grid-template-columns:minmax(0,1fr) max-content;grid-template-rows:34px 18px;gap:6px 8px;grid-column:2;width:100%;margin:0}.issue-directory-action{display:contents}.issue-directory-controls{grid-column:1;grid-row:1}.issue-directory-error{grid-column:1/-1;grid-row:2;max-width:100%;width:100%}.issue-row-actions>button{grid-column:2;grid-row:1;white-space:nowrap}.issue-evidence{margin-left:0}}
+@media(max-width:380px){.issue-row{height:334px;grid-template-rows:196px 92px}.issue-row-heading{grid-template-rows:98px 92px}.issue-row-actions{grid-template-columns:minmax(0,1fr);grid-template-rows:34px 34px 18px;row-gap:3px}.issue-row-actions>button{grid-column:1;grid-row:2;justify-self:start}.issue-directory-error{grid-row:3}}
+@media(max-width:620px){.issues-list-heading{align-items:flex-start;flex-direction:column}}
+@media(max-width:620px){.issue-directory-action{max-width:100%}.issue-directory-controls .app-select{flex:1;max-width:220px}.issue-directory-controls{width:100%}.issue-row-actions{align-items:flex-start;max-width:calc(100% - 26px)}}
+
+.issue-row{cursor:pointer;transform-origin:center}.issue-row.is-selected{border-color:#b692596e;background:#b58c490b}.issue-row h2,.issue-evidence p,.issue-type-tag{cursor:default}.issues-bulk-actions{flex-wrap:wrap;justify-content:flex-end}.issues-bulk-actions .issues-clear{color:#dba18d;border-color:#b6765947}
+/* Text hit areas follow their content; the rest of each line remains selectable whitespace. */
+.issue-object h2,.issue-evidence p{width:fit-content;max-width:100%}

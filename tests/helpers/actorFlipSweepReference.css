@@ -1,0 +1,4 @@
+/* Sweep from d43f226^ (e2a9e39), kept as a CSS reference for the WAAPI renderer. */
+.reference-flip-sweep{position:absolute;left:600px;top:120px;border-radius:9px;background:#302820;pointer-events:none}
+.reference-flip-sweep-light{position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,transparent 24%,#fff0cfaa 47%,#e9be7470 52%,transparent 76%);opacity:0;animation:reference-flip-light-sweep 640ms 180ms ease-out both}
+@keyframes reference-flip-light-sweep{0%{opacity:0;transform:translateX(-20%)}28%{opacity:.75}100%{opacity:0;transform:translateX(24%)}}

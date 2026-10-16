@@ -1,0 +1,20 @@
+.app-select{display:inline-flex;align-items:center;min-width:0;min-height:31px;padding:0 9px;border:1px solid #a98a574f;border-radius:7px;background:#171613;color:#e3d8c5;font-size:11px;vertical-align:middle;transition:border-color .15s,background .15s}
+.app-select:hover:not([data-disabled]){border-color:#c3a16a99;background:#211d17}
+.app-select:has(>.app-select-trigger[aria-expanded=true]){border-color:#c3a16a99;background:#211d17}
+.app-select:has(>.app-select-trigger:focus-visible){outline:2px solid #d8b77c;outline-offset:2px}
+.app-select[data-disabled]{opacity:.5}
+.app-select .app-select-trigger{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;min-height:29px;width:100%;height:100%;padding:0;border:0;border-radius:0;background:transparent;color:inherit;font:inherit;line-height:1.3;text-align:left;box-shadow:none;outline:none;cursor:pointer}
+.app-select .app-select-trigger:disabled{cursor:not-allowed}
+.app-select-value{min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.app-select-chevron{flex:none;width:14px;height:14px;color:#c9ac7b;transition:transform .15s}
+.app-select-trigger[aria-expanded=true] .app-select-chevron{transform:rotate(180deg)}
+.app-select-menu{position:fixed;z-index:10000;overflow:auto;overscroll-behavior:contain;padding:5px;border:1px solid #a98a577d;border-radius:8px;background:#1d1b17;box-shadow:0 12px 30px #0009;color:#e3d8c5;font-size:12px;scrollbar-width:thin;scrollbar-color:#8c7149 #1d1b17}
+.app-select-option{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:34px;padding:7px 9px;border-radius:4px;cursor:pointer;line-height:1.4}
+.app-select-option>span{min-width:0;overflow-wrap:anywhere}
+.app-select-option.is-active{background:#b18a492d;color:#f0d3a2}
+.app-select-option[aria-selected=true]{color:#f0d3a2}
+.app-select-option[aria-disabled=true]{opacity:.45;cursor:not-allowed}
+.app-select-option svg{width:14px;height:14px;flex:none}
+@media(prefers-reduced-motion:reduce){.app-select,.app-select-chevron{transition:none}}
+
+.app-select-menu.is-compact{padding:3.333333px}.app-select-menu.is-compact .app-select-option{min-height:22.666667px;padding-top:2px;padding-bottom:2px}

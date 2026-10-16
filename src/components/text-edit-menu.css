@@ -1,0 +1,3 @@
+.text-edit-menu{position:fixed;z-index:1000;width:200px;padding:5px;border:1px solid #b998645c;border-radius:8px;background:#191713;box-shadow:0 12px 32px #0008;color:#eadcc5}.text-edit-menu button{display:flex;align-items:center;justify-content:space-between;width:100%;height:34px;padding:0 10px;border:0;border-radius:4px;background:none;color:inherit;font-size:12px}.text-edit-menu button:hover:not(:disabled),.text-edit-menu button.active:not(:disabled){background:#b9904524;color:#f1d9aa}.text-edit-menu button:disabled{color:#807769;cursor:default}.text-edit-menu kbd{font-family:inherit;font-size:11px;color:#b8a88f}.text-edit-menu p{margin:7px 8px;color:#e3a69a;font-size:11px;line-height:1.5}
+
+.text-edit-menu{max-height:calc(100dvh - 16px);overflow:auto}

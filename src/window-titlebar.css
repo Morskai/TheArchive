@@ -1,0 +1,18 @@
+.window-titlebar{position:fixed;inset:0 0 auto;height:36px;z-index:12000;display:flex;align-items:center;background:#151411;border-bottom:1px solid #4b40312e;user-select:none}
+.window-caption{display:flex;align-items:center;gap:12px;flex:1;min-width:0;height:100%;padding:0 16px;cursor:default}
+.window-emblem{width:20px;height:20px;flex:none;object-fit:contain;pointer-events:none}
+.window-brand{font:12px Georgia,serif;letter-spacing:.13em;color:#dbceb7;white-space:nowrap}
+.window-subtitle{font-size:11px;letter-spacing:.06em;color:#a69c8d;white-space:nowrap}
+.window-actions{display:flex;align-self:stretch}
+.window-actions button{display:grid;place-items:center;width:46px;padding:0;border:0;border-radius:0;background:transparent;color:#afa79a;transform:none}
+.window-actions button:hover{background:#d8b77c13;color:#f1e4cf}
+.window-actions button:active{background:#d8b77c22;transform:none}
+.window-actions .window-close:hover{background:#8e3f35;color:white}
+.window-actions svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.25}
+.window-actions button:focus-visible{outline-offset:-4px}
+.window-error{font-size:11px;color:#e5b1a5}
+.desktop-window .app-shell{margin-top:36px;min-height:calc(100dvh - 36px)}
+.desktop-window .sidebar{top:36px;height:calc(100dvh - 36px)}
+.desktop-window .detail-layer{top:36px}
+.desktop-window .detail-drawer{height:calc(100dvh - 36px)}
+@media(max-width:460px){.window-caption{gap:9px;padding-left:10px}.window-subtitle{display:none}.window-actions button{width:38px}}

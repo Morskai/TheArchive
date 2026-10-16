@@ -1,0 +1,41 @@
+[package]
+name = "local-film-library-preview"
+default-run = "local-film-library-preview"
+version = "1.0.0"
+description = "Local film library desktop interface preview"
+license = "MIT"
+repository = "https://github.com/Morskai/TheArchive"
+edition = "2024"
+rust-version = "1.90"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "local_film_library_preview_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.7.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.12.0", features = ["tray-icon"] }
+tauri-plugin-dialog = "2.4.0"
+rusqlite = { version = "0.37", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+image = { version = "0.25.8", default-features = false, features = ["jpeg", "png", "webp"] }
+sha2 = "0.10.9"
+md-5 = "0.10.6"
+reqwest = { version = "0.13.5", default-features = false, features = ["blocking", "json", "form", "rustls-no-provider"] }
+rustls = { version = "0.23.45", default-features = false, features = ["ring", "std", "tls12"] }
+avif-decode = { version = "3.0.0", default-features = false }
+avif-parse = "2.1.0"
+
+[target.'cfg(windows)'.dependencies]
+libloading = "0.7.4"
+tauri-plugin-single-instance = "=2.5.2"
+windows = { version = "0.62.2", features = ["Win32_Foundation", "Win32_System_Com", "Win32_System_Com_StructuredStorage", "Win32_System_Variant", "Win32_UI_Shell_PropertiesSystem"] }
+windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_Graphics_Gdi", "Win32_Security_Credentials", "Win32_System_DataExchange", "Win32_System_Memory", "Win32_Storage_FileSystem", "Win32_System_IO", "Win32_System_Threading", "Win32_UI_Input_KeyboardAndMouse", "Win32_UI_WindowsAndMessaging"] }
+
+[dev-dependencies]
+tempfile = "3"

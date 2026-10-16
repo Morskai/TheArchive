@@ -1,0 +1,22 @@
+TheArchive built-in player uses the unmodified LGPL Windows x86_64 build of libmpv.
+The DLL is a dynamically loaded, replaceable file at player/libmpv-2.dll.
+TheArchive UI, media-library records and settings are maintained separately.
+
+Build provider: https://github.com/zhongfly/mpv-winbuild
+Pinned release: https://github.com/zhongfly/mpv-winbuild/releases/tag/2026-10-14-7c4f662c08
+Source and build recipes: https://github.com/zhongfly/mpv-winbuild/tree/2026-10-14-7c4f662c08
+Runtime archive: mpv-dev-lgpl-x86_64-20261014-git-7c4f662c08.7z
+mpv source revision: 7c4f662c08
+mpv source: https://github.com/mpv-player/mpv/commit/7c4f662c08
+mpv source archive: https://github.com/mpv-player/mpv/archive/7c4f662c08.tar.gz
+
+mpv and its authors: https://github.com/mpv-player/mpv/blob/master/Copyright
+The selected LGPL build excludes GPL-only features and uses LGPLv3 FFmpeg.
+FFmpeg source and authors: https://ffmpeg.org/download.html
+Dependencies and their pinned source/build configuration are in the build provider repository.
+The combined runtime is distributed under LGPL version 3 or later.
+See COPYING.LGPLv3 and COPYING.GPLv3 (incorporated by LGPLv3).
+
+You may replace this DLL with an ABI-compatible LGPL libmpv build for your own use.
+No libmpv or FFmpeg source modifications were made for TheArchive.
+The engine is provided without warranty; see the included license texts.

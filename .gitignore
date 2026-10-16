@@ -1,0 +1,102 @@
+# Dependencies and generated frontend output
+node_modules/
+.pnpm-store/
+dist/
+src-tauri/target/
+src-tauri/gen/
+*.tsbuildinfo
+.vite/
+
+# Local agent skills, configuration, and generated architecture analysis
+/.agents/
+/.codex/
+/.ua/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.local.json
+*.local.yaml
+*.local.yml
+*.local.toml
+*.local.ini
+/docs/LOCAL_HANDOFF.local.md
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# Runtime state, user libraries, and generated media (root directories)
+/data/
+/runtime/
+/user-data/
+/library/
+/libraries/
+/media/
+/movies/
+/videos/
+/subtitles/
+/posters/
+/covers/
+/thumbnails/
+/cache/
+/caches/
+/logs/
+/tmp/
+/temp/
+/output/
+/.local-tools/
+/.local-materials/
+/backups/
+/.cache/
+
+# Original video and subtitle files, wherever placed
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.m4v
+*.webm
+*.mpg
+*.mpeg
+*.srt
+*.ass
+*.ssa
+*.vtt
+*.sub
+*.idx
+*.sup
+
+# Databases, indexes, caches, logs, temporary files, and backups
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.log
+*.log.*
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.7z
+*.rar
+*.tar.gz
+
+# OS and editor state
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Keep source, tests, docs, build configuration, and curated UI assets trackable.
+# Review every new image before staging: original library artwork must stay local.

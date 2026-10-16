@@ -1,0 +1,14 @@
+.list-pagination{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 18px;margin-top:19px;padding-top:16px;border-top:1px solid var(--line-soft)}
+.list-pagination-summary{color:#998e7f;font-size:12px;white-space:nowrap}
+.list-pagination-controls,.list-page-numbers,.list-page-jump{display:flex;align-items:center;gap:6px}
+.list-pagination button{min-width:33px;height:34px;padding:0 10px;border:1px solid #ffffff2b;border-radius:5px;background:#ffffff06;color:#cbbba2;font-size:12px}
+.list-pagination button:hover:not(:disabled){border-color:#c8a775;color:#f0d3a5}
+.list-pagination button:disabled{opacity:.38;cursor:not-allowed}
+.list-page-numbers button.active{border-color:#c6a36b;background:#b48a4d36;color:#f2d8a7}
+.list-page-numbers>span{padding:0 5px;color:#897b68}
+.list-page-jump{color:#a99d8c;font-size:12px;white-space:nowrap}
+.list-page-jump input{width:46px;height:34px;padding:0 5px;border:1px solid #ffffff2b;border-radius:5px;outline:none;background:#171718;color:#e5d1ac;font-size:12px;text-align:center}
+.list-page-jump input:focus{border-color:#c8a775}
+.list-page-jump input::-webkit-inner-spin-button,.list-page-jump input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.list-page-jump button{margin-left:3px;border-color:#a889596b;color:#dec595}
+@media(max-width:620px){.list-pagination{justify-content:center}.list-pagination-summary{width:100%;text-align:center}.list-pagination-controls{max-width:100%;flex-wrap:wrap;justify-content:center}}

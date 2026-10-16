@@ -1,0 +1,50 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "TheArchive",
+  "mainBinaryName": "TheArchive",
+  "version": "1.0.0",
+  "identifier": "com.localfilmlibrary.preview",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://127.0.0.1:5173",
+    "beforeDevCommand": "node scripts/prepare-player.mjs && pnpm dev",
+    "beforeBuildCommand": "node scripts/prepare-player.mjs && pnpm build",
+    "beforeBundleCommand": "powershell -NoProfile -ExecutionPolicy Bypass -File src-tauri/windows/set-diagnostic-icon.ps1"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "THE ARCHIVE  私人影像收藏室",
+        "theme": "Dark",
+        "backgroundColor": "#08090a",
+        "width": 1280,
+        "height": 800,
+        "resizable": true,
+        "decorations": false,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self' data:; connect-src ipc: http://ipc.localhost; object-src 'none'; base-uri 'self'; frame-src 'none'",
+      "devCsp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self' data:; connect-src ipc: http://ipc.localhost http://127.0.0.1:5173 ws://127.0.0.1:5173; object-src 'none'; base-uri 'self'; frame-src 'none'"
+    }
+  },
+  "bundle": {
+    "resources": { "../.local-tools/mpv/libmpv-2.dll": "player/libmpv-2.dll", "player-licenses/": "player/licenses/" },
+    "active": true,
+    "targets": ["nsis"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "template": "windows/installer.nsi",
+        "installerIcon": "icons/icon.ico",
+        "uninstallerIcon": "icons/uninstall.ico"
+      }
+    }
+  }
+}

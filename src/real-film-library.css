@@ -1,0 +1,49 @@
+/* Real records use the confirmed film-library layout, artwork and drawer styles. */
+.real-version{overflow:hidden}
+.real-version .version-main{display:flex;align-items:baseline;justify-content:flex-start;gap:4px;min-width:0;white-space:nowrap}
+.real-version-name{min-width:0;flex:0 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.real-version-facts{flex:none;white-space:nowrap;color:#aaa093}
+.real-version .version-main strong{flex:none}
+.real-detail-empty{margin:0;color:#aaa093;font-size:12px;line-height:1.6}
+.real-code-placeholder{font-family:"Microsoft YaHei UI","Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.real-half-star:after{background:linear-gradient(90deg,transparent 50%,#171615 50%)}
+.real-save-error{margin:10px 0;color:#e9ae93;font-size:12px;line-height:1.45}
+.detail-facts .real-directory-fact{display:grid;grid-template-columns:max-content minmax(0,1fr);align-items:start;gap:14px}
+.real-directory-fact dt{white-space:nowrap}
+.real-directory-fact .real-directory-path{min-width:0;overflow-wrap:anywhere;text-align:right}
+.detail-action-feedback{width:15px;height:15px;flex:none;vertical-align:middle}
+.version-secondary button .detail-action-feedback{margin-left:7px}
+.detail-action-feedback.is-pending{animation:detail-action-spin .8s linear infinite}
+.version-secondary button.action-succeeded{border-color:#c9a666;color:#eed6ad}
+.version-play.action-succeeded{box-shadow:inset 0 0 0 1px #ffe4ac}
+@keyframes detail-action-spin{to{transform:rotate(360deg)}}
+.real-cover-art { position: relative; overflow: hidden; }
+.real-cover-art img { width: 100%; height: 100%; display: block; object-fit: var(--film-cover-fit,cover); }
+.real-cover-art.film-art-large img { object-fit: contain; }
+.real-cover-notice { position: absolute; bottom: 8px; left: 6px; right: 6px; text-align: center; font-size: 10px; color: var(--text-muted, #aca69c); }
+.actor-row.actor-link{padding:0;border:0;background:transparent;color:inherit;text-align:inherit}
+.film-cast-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.film-cast-heading h3{margin:0}
+.film-cast-heading button,.film-cast-editor button{min-height:30px;padding:5px 10px;border:1px solid #b997615c;border-radius:7px;background:#ae874312;color:var(--gold-bright);font-size:11px;white-space:nowrap}
+.film-cast-heading button:hover,.film-cast-editor button:hover{border-color:var(--gold);background:#ae874326}
+.film-cast-heading button[aria-expanded="true"]{border-color:#c5a0648f;background:#ae874323}
+.film-cast-editor{margin-top:16px;padding-top:14px;border-top:1px solid var(--line-soft)}
+.film-cast-editor ul{padding:0;margin:0;list-style:none}
+.film-cast-editor .film-cast-current{display:grid;gap:8px;margin-bottom:16px}
+.film-cast-current li{display:flex;align-items:center;gap:9px;min-height:30px}
+.film-cast-name{min-width:0;color:var(--text);font-size:12px;overflow-wrap:anywhere}
+.film-cast-current .film-cast-name{flex:1}
+.film-cast-origin{flex:none;color:#c1b39b;font-size:10px}
+.film-cast-search{display:grid;gap:8px;color:#e5d7bd;font-size:12px}
+.film-cast-search input{width:100%;min-width:0;min-height:36px;padding:8px 10px;border:1px solid #ffffff30;border-radius:7px;background:#ffffff05;color:var(--text);font-size:12px;caret-color:var(--gold-bright)}
+.film-cast-search input::placeholder{color:#aaa093}
+.film-cast-hint{margin:8px 0 12px;color:#b1a695;font-size:11px;line-height:1.6}
+.film-cast-notice{margin:8px 0 12px;color:var(--gold-bright);font-size:11px;line-height:1.6}
+.film-cast-candidates{max-height:230px;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#6d5940 #101113}
+.film-cast-candidates li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line-soft)}
+.film-cast-candidates li:first-child{padding-top:0}
+.film-cast-candidates li:last-child{border-bottom:0}
+.film-cast-candidates li>div{display:grid;min-width:0;gap:4px}
+.film-cast-candidates small{color:#b1a695;font-size:10px;overflow-wrap:anywhere}
+.film-cast-editor button:disabled{cursor:wait;color:#b1a695;opacity:.7}
+.film-cast-load-error{display:flex;align-items:center;justify-content:space-between;gap:12px}

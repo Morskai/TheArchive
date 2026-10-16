@@ -1,0 +1,3 @@
+.comet-trail{position:fixed;inset:0;z-index:60;width:100%;height:100%;pointer-events:none}
+:root[data-reduce-motion="true"] .comet-trail{display:none}
+@media(prefers-reduced-motion:reduce){.comet-trail{display:none}}

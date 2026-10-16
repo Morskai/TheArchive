@@ -1,0 +1,6 @@
+{
+  "build": "zhongfly/mpv-winbuild 2026-10-14-7c4f662c08 (LGPL x86_64, baseline CPU)",
+  "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-10-14-7c4f662c08/mpv-dev-lgpl-x86_64-20261014-git-7c4f662c08.7z",
+  "archiveSha256": "37FD9C57C2C050E23162C08B6FE3EEA0555A6B6E0B2D08470555834AEA0A18D3",
+  "dllSha256": "36BF0F69435FB2429685F3BC92AA85B388DCA0343B74E78BEBF3284EE3B7AFD4"
+}

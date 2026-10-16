@@ -1,0 +1,27 @@
+:root{--ease-out:cubic-bezier(.23,1,.32,1);--ease-in-out:cubic-bezier(.77,0,.175,1);--ease-drawer:cubic-bezier(.32,.72,0,1)}
+/* One shared navigation plate. CSS retargets it from its current position on rapid input. */
+.motion-page[hidden] { display:none!important; }
+.nav { position:relative; --nav-row-height:43px; }
+.nav .nav-item { position:relative; z-index:1; height:var(--nav-row-height); font-size:16px; }
+.nav .nav-symbol { width:31px; height:31px; }
+.nav .nav-symbol svg { width:23px; height:23px; }
+.nav .nav-item.active { background:transparent; border-color:transparent; box-shadow:none; }
+.nav-indicator { position:absolute; top:0; left:0; width:100%; height:var(--nav-row-height); border:1px solid #b590494d; border-radius:9px; background:linear-gradient(90deg,#a77d4047,#a77d4012 72%,#a77d4005); box-shadow:inset 2px 0 var(--gold); pointer-events:none; transform:translateY(calc(var(--nav-index) * (var(--nav-row-height) + 5px))); transition:transform 180ms cubic-bezier(.16,1,.3,1); }
+.app-shell[data-motion="false"] .nav-indicator { transition:none; }
+@media(max-width:460px) { .nav { --nav-row-height:38px; } }
+@media(prefers-reduced-motion:reduce) { .nav-indicator { transition:none; } }
+
+/* Pointer feedback gently brightens the control; keyboard focus keeps its own cue. */
+.button-acknowledged:not(:focus-visible){filter:brightness(1.1)}
+.direction-button .arrow-icon{transition:transform 170ms cubic-bezier(.22,.75,.18,1)}
+.direction-button .arrow-down{transform:rotate(180deg)}
+.density-control button,.library-actions button[aria-pressed]{position:relative}
+.density-control button.active::after,.library-actions button[aria-pressed="true"]::after{content:"";position:absolute;bottom:0;left:25%;right:25%;height:2px;background:var(--gold);pointer-events:none}
+.app-shell[data-motion="false"] .direction-button .arrow-icon{transition:none}
+@media(prefers-reduced-motion:reduce){.direction-button .arrow-icon{transition:none}}
+
+/* The root changes immediately; only the portrait travels between the table and its profile. */
+:root[data-portrait-travel]::view-transition-old(root),:root[data-portrait-travel]::view-transition-new(root){animation:none}
+:root[data-portrait-travel]::view-transition-group(actor-portrait-travel){animation-duration:420ms;animation-timing-function:var(--ease-drawer);z-index:1}
+:root[data-portrait-travel]::view-transition-old(actor-portrait-travel),:root[data-portrait-travel]::view-transition-new(actor-portrait-travel){height:100%;width:100%;object-fit:cover;border-radius:9px;overflow:hidden;animation-duration:200ms;animation-timing-function:var(--ease-out)}
+@media(prefers-reduced-motion:reduce){:root[data-portrait-travel]::view-transition-group(actor-portrait-travel){animation-duration:1ms}}

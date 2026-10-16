@@ -1,0 +1,28 @@
+/* Only the requested A marks differ from the 17a5112 interface. */
+.brand-mark {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  transform: none;
+  box-shadow: none;
+}
+.navigation-collapsed .brand {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  pointer-events: none;
+}
+.navigation-collapsed .brand-mark { width: 24px; height: 24px; margin: 0 auto; }
+.navigation-collapsed .brand-name, .navigation-collapsed .brand-sub { display: none; }
+.navigation-collapsed .navigation-toggle { top: 52px; }
+@media (max-width: 460px) {
+  .navigation-collapsed .brand { top: 16px; }
+  .navigation-collapsed .navigation-toggle { top: 48px; }
+}
