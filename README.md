@@ -18,6 +18,7 @@
 </p>
 
 <p align="center">
+  <a href="#下载安装">下载安装</a> ·
   <a href="#功能亮点">功能亮点</a> ·
   <a href="#界面预览">界面预览</a> ·
   <a href="#开始使用">开始使用</a> ·
@@ -53,6 +54,14 @@ TheArchive 是一款 Windows 本地影视资料管理软件。通过主动扫描
 
 ## 开始使用
 
+### 下载安装
+
+**[下载 Windows x64 安装包](https://github.com/Morskai/TheArchive/releases/download/v1.0.0-preview.1/TheArchive_1.0.0_x64-setup.exe)** · [查看发布说明与校验信息](https://github.com/Morskai/TheArchive/releases/tag/v1.0.0-preview.1)
+
+下载后运行安装程序，再从开始菜单或桌面快捷方式打开 TheArchive。需要 WebView2 运行时；影片和照片仍保存在你自己的目录中。
+
+当前提供 **v1.0 公开测试版**。安装包与对应源码、SHA-256 及已验证范围在发布页列出；实际安装／覆盖升级和真实资料保留仍需进一步验证。页面下方的 Source code 压缩包是源码，不是安装程序。
+
 ### 从目录到片库
 
 1. **添加目录**：在“设置”中选择存放影片的文件夹，可以添加多个片库。
@@ -61,7 +70,7 @@ TheArchive 是一款 Windows 本地影视资料管理软件。通过主动扫描
 4. **补充演员**：手动创建资料，或扫描包含 actor.info 的目录，再维护出演关系。
 5. **浏览与播放**：在影片库筛选收藏，也可以从演员详情或翻牌结果重新发现影片。
 
-更多操作见 **[使用指南](docs/USAGE.md)**。当前仓库提供源码，尚未在本仓库发布可下载的安装包。
+更多操作见 **[使用指南](docs/USAGE.md)**。
 
 ### 目录示例
 

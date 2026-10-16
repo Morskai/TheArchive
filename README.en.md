@@ -18,6 +18,7 @@
 </p>
 
 <p align="center">
+  <a href="#download-and-install">Download</a> ·
   <a href="#features">Features</a> ·
   <a href="#screenshots">Screenshots</a> ·
   <a href="#getting-started">Getting started</a> ·
@@ -53,6 +54,14 @@ TheArchive is a Windows desktop application for managing a local film collection
 
 ## Getting started
 
+### Download and install
+
+**[Download the Windows x64 installer](https://github.com/Morskai/TheArchive/releases/download/v1.0.0-preview.1/TheArchive_1.0.0_x64-setup.exe)** · [Release notes and checksums](https://github.com/Morskai/TheArchive/releases/tag/v1.0.0-preview.1)
+
+Run the downloaded installer, then open TheArchive from the Start menu or desktop shortcut. The WebView2 Runtime is required; your films and photos remain in your own folders.
+
+This is the **v1.0 public preview**. The release page lists the installer, corresponding source revision, SHA-256 and validation scope. Installation, in-place upgrades and preservation of real user data still require further verification. GitHub's Source code archives contain source files, not an installer.
+
 ### From folders to a library
 
 1. **Add folders:** choose your film folders in Settings. You can add multiple libraries.
@@ -61,7 +70,7 @@ TheArchive is a Windows desktop application for managing a local film collection
 4. **Add actors:** create profiles manually or scan folders containing actor.info files, then manage their film appearances.
 5. **Browse and play:** filter your films or rediscover them through actor profiles and card draws.
 
-See the **[user guide](docs/USAGE.md)** for details. This repository currently provides source code; no downloadable installer has been published here yet.
+See the **[user guide](docs/USAGE.md)** for details.
 
 ### Example folder layout
 
